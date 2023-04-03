@@ -1,16 +1,24 @@
-function renderMeme(emotion) {
-    return
+function fetchMemes() {
+    fetch ('http://localhost:3000/memes')
+    .then (res => res.json())
+    .then (console.log)
 }
 
-function getMeme(emotion) {
-    return
-}
+fetchMemes();
 
-function addLike() {
-    return
-}
+// function renderMeme(emotion) {
+//     return
+// }
 
-function removeLike() {
-    return
-}
+// function getMeme(emotion) {
+//     return
+// }
+
+// function addLike() {
+//     return
+// }
+
+// function removeLike() {
+//     return
+// }
 
