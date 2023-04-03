@@ -1,0 +1,172 @@
+{
+    "memes": [
+        {
+            "id": 1,
+            "feelingId": "Angry",
+            "imageUrl": "https://thumbor.bigedition.com/grumpy-cat-memes/U6vCQJH8J5bumnE95sxsdu4MRsQ=/82x45:909x666/800x0/filters:quality(80)/granite-web-prod/fc/ab/fcab5a05c8d14c2cb3a2d31c1dddad09.jpeg",
+            "likes": 0
+        },
+        {
+            "id": 2,
+            "feelingId": "Angry",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 3,
+            "feelingId": "Angry",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 4,
+            "feelingId": "Angry",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 5,
+            "feelingId": "Sleepy",
+            "imageUrl": "https://i1.wp.com/picsmine.com/wp-content/uploads/2017/04/Im-not-sleeping-im-just-resting-my-eyes-Sleeping-Meme.jpg?resize=810%2C608",
+            "likes": 0
+        },
+        {
+            "id": 6,
+            "feelingId": "Sleepy",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 7,
+            "feelingId": "Sleepy",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 8,
+            "feelingId": "Sleepy",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 9,
+            "feelingId": "Happy",
+            "imageUrl": "https://i.kym-cdn.com/photos/images/original/001/925/190/f0b.jpg",
+            "likes": 0
+        },
+        {
+            "id": 10,
+            "feelingId": "Happy",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 11,
+            "feelingId": "Happy",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 12,
+            "feelingId": "Happy",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 13,
+            "feelingId": "Adventurous",
+            "imageUrl": "http://www.adventureseeker.org/wp-content/uploads/2014/06/Funny-Travel-Memes-2.jpg",
+            "likes": 0
+        },
+        {
+            "id": 14,
+            "feelingId": "Adventurous",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 15,
+            "feelingId": "Adventurous",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 16,
+            "feelingId": "Adventurous",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 17,
+            "feelingId": "Disgusted",
+            "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/screen-shot-2017-05-25-at-6-35-25-am-1495690657.png",
+            "likes": 0
+        },
+        {
+            "id": 18,
+            "feelingId": "Disgusted",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 19,
+            "feelingId": "Disgusted",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 20,
+            "feelingId": "Disgusted",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 21,
+            "feelingId": "Scared",
+            "imageUrl": "https://imgflip.com/s/meme/Scared-Cat.jpg",
+            "likes": 0
+        },
+        {
+            "id": 22,
+            "feelingId": "Scared",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 23,
+            "feelingId": "Scared",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 24,
+            "feelingId": "Scared",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 25,
+            "feelingId": "Sad",
+            "imageUrl": "https://media1.popsugar-assets.com/files/thumbor/3t9pQyCJm2IG8s65y_HiQgrGgzs/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2014/11/19/842/n/1922507/49c4acd14ae3aff5_i.chzbgr-1/i/only-acceptable-use-Internet-Explorer-emoticon.jpg",
+            "likes": 0
+        },
+        {
+            "id": 26,
+            "feelingId": "Sad",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 27,
+            "feelingId": "Sad",
+            "imageUrl": "",
+            "likes": 0
+        },
+        {
+            "id": 28,
+            "feelingId": "Sad",
+            "imageUrl": "",
+            "likes": 0
+        }
+    ]
+}
