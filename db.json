@@ -3,6 +3,7 @@
     {
         "id": 1,
         "name": "Angry",
+        "emoji": "./images/743418.png",
         "memes": [
             {
                 "id": 1,
@@ -26,6 +27,7 @@
     {
         "id": 2,
         "name": "Sleepy",
+        "emoji": "./images/3310842.png",
         "memes": [
             {
                 "id": 1,
@@ -49,6 +51,7 @@
     {
         "id": 3,
         "name": "Happy",
+        "emoji": "./images/520464.png",
         "memes": [
             {
                 "id": 1,
@@ -72,6 +75,7 @@
     {
         "id": 4,
         "name": "Adventurous",
+        "emoji": "./images/743405.png",
         "memes": [
         {
             "id": 1,
@@ -95,6 +99,7 @@
     {
         "id": 5,
         "name": "Disgusted",
+        "emoji": "./images/5644485.png",
         "memes": [
             {
                 "id": 1,
@@ -118,6 +123,7 @@
     {
         "id": 6,
         "name": "Scared",
+        "emoji": "./images/2339847.png",
         "memes": [
             {
                 "id": 1,
@@ -141,6 +147,7 @@
     {
         "id": 7,
         "name": "Sad",
+        "emoji": "./images/3769878.png",
         "memes": [
             {
                 "id": 1,
