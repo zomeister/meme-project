@@ -54,3 +54,4 @@ function displayMemes(emotion){
     memeDiv.appendChild(label)
     memeDiv.appendChild(likeBtn)
 }
+
