@@ -125,6 +125,12 @@
       "feelingId": "Sad",
       "imageUrl": "https://thumbor.bigedition.com/sensitive-dog-crying-meme/kz7OxNoWtwCLhNEFw3WBrBRFx9E=/800x0/filters:quality(80)/granite-web-prod/4e/ca/4eca0c205b8245498a59b68617ed4b9b.jpeg",
       "likes": 0
+    },
+    {
+      "feelingId": "Angry",
+      "imageUrl": "https://bestwishesandquotes.com/wp-content/uploads/2019/01/Angry-Memes-5.jpg",
+      "likes": 0,
+      "id": 22
     }
   ]
 }
