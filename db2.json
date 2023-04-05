@@ -131,6 +131,18 @@
       "imageUrl": "https://bestwishesandquotes.com/wp-content/uploads/2019/01/Angry-Memes-5.jpg",
       "likes": 0,
       "id": 22
+    },
+    {
+      "feelingId": "Happy",
+      "imageUrl": "https://i1.wp.com/winkgo.com/wp-content/uploads/2019/03/happy-memes-make-you-smile-more-39.jpg?resize=720%2C1096&ssl=1",
+      "likes": 0,
+      "id": 23
+    },
+    {
+      "feelingId": "Scared",
+      "imageUrl": "https://i.imgflip.com/2hqxhv.jpg",
+      "likes": 0,
+      "id": 24
     }
   ]
 }

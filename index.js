@@ -18,7 +18,6 @@ function createEmotionsList(emotions) {
         emotionsList.append(button)
         emotionOptionEventListener(button)
     })
-    formEventListener(emotions)
 }
 
 
@@ -57,7 +56,7 @@ function displayMemes(emotion){
     })
 }
 
-function addNewMemes(emotion,choice, imageUrl){
+function addNewMemes(choice, imageUrl){
     fetch("http:localhost:3000/memes", {
         method: "POST",
         headers: {
@@ -73,12 +72,15 @@ function addNewMemes(emotion,choice, imageUrl){
     .then(data => getMemes(data))
 }
 
-function formEventListener(emotion){
+function formEventListener(){
     formDiv.addEventListener("submit", (e)=>{
         const selectChoice = document.getElementById("select-choice").value
         const imgUrl = document.getElementById("img-url").value
+        memeDiv.textContent =""
         e.preventDefault()
-        addNewMemes(emotion,selectChoice,imgUrl)
+        addNewMemes(selectChoice,imgUrl)
         formDiv.reset()
     })
 }
+
+formEventListener()
