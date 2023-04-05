@@ -18,13 +18,15 @@ function renderFeeling(feeling) {
     
     const emotionlistNav = document.getElementById('emotions-list')
     const emotionButton = document.createElement('button')
+    const emotionImg = document.createElement('img')
     emotionlistNav.appendChild(emotionButton)
-
+    
     emotionButton.id = feeling.id
     emotionButton.className = "hover-div"
     emotionButton.textContent = feeling.name
-    // emotionButton.innerHTML = `<img src=${feeling.emoji}>`
-
+    
+    emotionImg.src = feeling.emoji
+    emotionButton.appendChild(emotionImg)
     emotionButton.addEventListener('click', (e) => displayMemesByFeeling (feeling))
 }
 
