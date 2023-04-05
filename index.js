@@ -22,9 +22,9 @@ function createEmotionsList(emotions) {
 
 function emotionOptionEventListener(button) {
     button.addEventListener("click", (event) => {
-        event.preventDefault()
         memeDiv.textContent =""
         getMemes(button.innerText)
+        event.preventDefault()
     })
 }
 
@@ -42,10 +42,13 @@ function displayMemes(emotion){
 
     const img = document.createElement("img")
     img.src = emotion.imageUrl
+    memeDiv.appendChild(img)
+
     const label = document.createElement("label")
     label.textContent = `Likes: ${emotion.likes}`
+    memeDiv.appendChild(label)
+
     const likesBtn = document.createElement("button")
     likesBtn.textContent = " ♥ "
-
-    memeDiv.appendChild(img)
+    memeDiv.appendChild(likesBtn)
 }
