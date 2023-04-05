@@ -2,6 +2,9 @@ const emotions = ["Adventurous", "Angry", "Disgusted", "Happy", "Sad", "Scared",
 const emotionsList = document.getElementById("emotions-list")
 const formDiv = document.getElementById("form-div")
 
+const baseUrl = 'http://localhost:3000/'
+const memesUrl = baseUrl + 'memes/'
+
 createEmotionsList(emotions)
 
 function createEmotionsList(emotions) {
@@ -54,6 +57,25 @@ function displayMemes(emotion){
         const likesBtn = document.createElement("button")
         likesBtn.textContent = " ♥ "
         memeDiv.appendChild(likesBtn)
+
+        likesBtn.addEventListener('click', () => increaseMemeLikes(meme, label))
+    })
+}
+
+function increaseMemeLikes(meme, label) {
+    //console.log(toy)
+
+    fetch(memesUrl + `${meme.id}`, {
+        method: 'PATCH',
+        headers: {
+            'content-type': 'application/json',
+            'accepts': 'application/json'
+        },
+        body: JSON.stringify({likes: meme.likes += 1})
+        })
+    .then(res => res.json())
+    .then(patchedMemeData => {
+        label.textContent = `Likes: ${meme.likes}`
     })
 }
 
