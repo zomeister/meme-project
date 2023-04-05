@@ -6,14 +6,19 @@
         <title>Memes and Feelings!</title>
         <link defer rel="stylesheet" type="text/css" href="./style.css"/>
         <script defer type="text/javascript" src="./index.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Titan+One&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header id="title-header">
             <h1>Meme-oticons</h1>
         </header>
         <div class="container">
             <nav id="emotions-list">
-                <h3>How Are You Meme-ing Today?</h3>
+                <h3 id="prompt" class="rainbow-letters">How Are You Meme-ing Today?</h3>
                 <!-- <button id="angry" class="hover-div">
                     <img class="image-style" src="./images/743418.png" alt="angry-emote"/>
                     <p class="img-description">Angry</p>> 
@@ -43,11 +48,23 @@
                     <p class="img-description">Sad</p> 
                 </button> -->
             </nav>
+            <form>
+
+                <select>
+                    <option value="Angry">Angry</option>
+                    <option value="Adventurous">Adventurous</option>
+                    <option value="Disgusted">Disgusted</option>
+                    <option value="Happy">Happy</option>
+                    <option value="Sad">Sad</option>
+                    <option value="Scared">Scared</option>
+                    <option value="Sleepy">Sleepy</option>
+                </select>
+            </form>
             
             <section class="emotion-images">
                 <!-- All the Images of the emotion go here -->
-                <div>
-                    <img class="meme-images" src=""/>
+                <div id="meme-div">
+                    <!-- <img class="meme-images" src=""/>
                     <label class="control-label" style="margin-left: 12px;"></label>
                     <input class="btn" type="button" class="click" style="margin-left: 20px; margin-bottom: 8px;">
                     
@@ -57,7 +74,7 @@
                     
                     <img class="meme-images" src=""/>
                     <label class="control-label" style="margin-left: 12px;"></label>
-                    <input class="btn" type="button" class="click" style="margin-left: 20px; margin-bottom: 8px;">
+                    <input class="btn" type="button" class="click" style="margin-left: 20px; margin-bottom: 8px;"> -->
                 </div>
             </section>
         </div>

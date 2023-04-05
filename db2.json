@@ -4,31 +4,31 @@
             "id": 1,
             "feelingId": "Angry",
             "imageUrl": "https://thumbor.bigedition.com/grumpy-cat-memes/U6vCQJH8J5bumnE95sxsdu4MRsQ=/82x45:909x666/800x0/filters:quality(80)/granite-web-prod/fc/ab/fcab5a05c8d14c2cb3a2d31c1dddad09.jpeg",
-            "likes": 0
+            "likes": 3
         },
         {
             "id": 2,
             "feelingId": "Angry",
             "imageUrl": "https://i.pinimg.com/736x/44/5b/31/445b31000ce37c1f3c8642ce972bc06e--all-about-me-parks-and-recreation.jpg",
-            "likes": 0
+            "likes": 2
         },
         {
             "id": 3,
             "feelingId": "Angry",
             "imageUrl": "https://qph.cf2.quoracdn.net/main-qimg-1a66b83efe17e433d704322f6f90f185-lq",
-            "likes": 0
+            "likes": 1
         },
         {
             "id": 4,
             "feelingId": "Sleepy",
             "imageUrl": "https://i1.wp.com/picsmine.com/wp-content/uploads/2017/04/Im-not-sleeping-im-just-resting-my-eyes-Sleeping-Meme.jpg?resize=810%2C608",
-            "likes": 0
+            "likes": 2
         },
         {
             "id": 5,
             "feelingId": "Sleepy",
             "imageUrl": "https://thumbor.bigedition.com/spongebob-sleep-memes/rFK655WigQ4vOEUuTDsVFzFHlu4=/480x480/filters:format(webp):quality(80)/granite-web-prod/cf/9e/cf9e0073e19d49c3931f57a58944c7e9.jpeg",
-            "likes": 0
+            "likes": 1
         },
         {
             "id": 6,
