@@ -4,10 +4,8 @@ const formDiv = document.getElementById("form-div")
 const baseUrl = 'http://localhost:3000/'
 const memesUrl = baseUrl + 'memes/'
 
-const baseUrl = 'http://localhost:3000/'
-const memesUrl = baseUrl + 'memes/'
-
 createEmotionsList(emotions)
+
 
 function createEmotionsList(emotions) {
     emotions.forEach(emotion => {
@@ -29,6 +27,7 @@ function createEmotionsList(emotions) {
 function emotionOptionEventListener(button) {
     button.addEventListener("click", (event) => {
         memeDiv.style.display = "block";
+        previousBtn.style.visibility = "hidden"
         getMemes(button.innerText)
         event.preventDefault()
     })
@@ -50,52 +49,63 @@ const dislikeBtn = document.getElementById("dislike-btn")
 const nextBtn = document.getElementById("next-btn")
 const previousBtn = document.getElementById("previous-btn")
 
-
 function displayMemes(emotion){
 
-    let arr = []
+    img.src = emotion[0].imageUrl
 
-    emotion.forEach(meme => {
-/*<<<<<<< db2
-        arr.push(meme)
-    })
-
-    img.src = arr[0].imageUrl
-
-    label.textContent = `Likes: ${arr[0].likes}`
+    label.textContent = `Likes: ${emotion[0].likes}`
 
     let i = 0
 
     nextBtn.addEventListener("click", ()=>{
-        if(arr.length - 1 > i){
-            i++
-            console.log(i)
-            img.src = arr[i].imageUrl
-            label.textContent = `Likes: ${arr[i].likes}`
+        if(emotion.length - 1 > i){
+            ++i
+            img.src = emotion[i].imageUrl
+            label.textContent = `Likes: ${emotion[i].likes}`
         }
     })
 
     previousBtn.addEventListener("click", ()=>{
         if(i > 0){
-            i--
-            console.log(i)
-            img.src = arr[i].imageUrl
-            label.textContent = `Likes: ${arr[i].likes}`
+            --i
+            img.src = emotion[i].imageUrl
+            label.textContent = `Likes: ${emotion[i].likes}`
         }
-======= */
-        const img = document.createElement("img")
-        img.src = meme.imageUrl
-        memeDiv.appendChild(img)
-    
-        const label = document.createElement("label")
-        label.textContent = `Likes: ${meme.likes}`
-        memeDiv.appendChild(label)
-    
-        const likesBtn = document.createElement("button")
-        likesBtn.textContent = " ♥ "
-        memeDiv.appendChild(likesBtn)
+    })
 
-        likesBtn.addEventListener('click', () => increaseMemeLikes(meme, label))
+    dislikeBtn.addEventListener('click', () => {
+        if(emotion[i].likes > 0){
+            decreaseMemeLikes(emotion[i], label)
+        }
+    })
+
+    likesBtn.addEventListener('click', () => increaseMemeLikes(emotion[i], label))
+}
+
+function addNewMemes(choice, imageUrl){
+    fetch(memesUrl, {
+        method: "POST",
+        headers: {
+            "content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            "feelingId": choice,
+            "imageUrl": imageUrl,
+            "likes": 0
+        })
+    })
+    .then(r=>r.json())
+    .then(data => getMemes(data))
+}
+
+const selectChoice = document.getElementById("select-choice")
+const imgUrl = document.getElementById("img-url")
+
+function formEventListener(){
+    formDiv.addEventListener("submit", (e)=>{
+        e.preventDefault()
+        addNewMemes(selectChoice.value,imgUrl.value)
+        formDiv.reset()
     })
 }
 
@@ -113,39 +123,6 @@ function increaseMemeLikes(meme, label) {
     .then(res => res.json())
     .then(patchedMemeData => {
         label.textContent = `Likes: ${meme.likes}`
-
-    })
-
-    dislikeBtn.addEventListener('click', () => {
-        if(arr[i].likes > 0){
-            decreaseMemeLikes(arr[i], label)
-        }
-    })
-
-}
-
-function addNewMemes(choice, imageUrl){
-    fetch(memesUrl, {
-        method: "POST",
-        headers: {
-            "content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            "feelingId": choice,
-            "imageUrl": imageUrl,
-            "likes": 0
-        })
-    })
-}
-
-const selectChoice = document.getElementById("select-choice")
-const imgUrl = document.getElementById("img-url")
-
-function formEventListener(){
-    formDiv.addEventListener("submit", (e)=>{
-        e.preventDefault()
-        addNewMemes(selectChoice.value,imgUrl.value)
-        formDiv.reset()
     })
 }
 
@@ -165,6 +142,5 @@ function decreaseMemeLikes(meme, label) {
     })
 }
 
+
 formEventListener()
-
-
