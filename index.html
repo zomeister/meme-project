@@ -18,13 +18,13 @@
         </header>
         <div class="container">
             <nav id="emotions-list">
-                <h3 id="prompt" class="rainbow-letters">How Are You Meme-ing Today?</h3>
-                <form id="form-div">
+                <h3 id="form-header" class="rainbow-letters">Add New Meme</h3>
+                <form id="form-div" style="margin: 2%;">
                     Image Url: <br> 
-                    <input id="img-url" type="text" class="style-form"><br>
+                    <input id="img-url" type="url" class="style-form" required><br>
                     Image Emotion Type: <br>
-                    <select id="select-choice">
-                        <option value="selection">---Select---</option>
+                    <select id="select-choice" required>
+                        <option value="">---Select---</option>
                         <option value="Angry">Angry</option>
                         <option value="Adventurous">Adventurous</option>
                         <option value="Disgusted">Disgusted</option>
@@ -35,11 +35,20 @@
                     </select> <br><br>
                     <input value="submit" type="submit">
                 </form>
+                <h3 id="prompt" class="rainbow-letters">How Are You Meme-ing Today?</h3>
             </nav>
             
-            <section class="emotion-images">
+            <section class="emotion-images" style="align-content: center;">
                 <!-- All the Images of the emotion go here -->
-                <div id="meme-div">
+                <div id="meme-div" style="align-content: center;">
+                    <img id="meme-image" class="meme-images" style="width: 350px; height: 350px;"/>
+                    <div style="align-items: center;">
+                        <button id="previous-btn" class="btn" type="button" class="click"> Previous</button>
+                        <label id="likes-label" class="control-label">Total Likes 0</label>
+                        <button id="likes-btn" class="btn" type="button" class="click"> 💓</button>
+                        <button id="dislike-btn" class="btn" type="button" class="click" > 💔</button>
+                        <button id="next-btn" class="btn" type="button" class="click"> Next</button>
+                    </div>
                 </div>
             </section>
         </div>
