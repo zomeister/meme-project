@@ -26,8 +26,8 @@ function createEmotionsList(emotions) {
 
 function emotionOptionEventListener(button) {
     button.addEventListener("click", (event) => {
-        memeDiv.style.display = "block";
-        previousBtn.style.visibility = "hidden"
+        memeDiv.style.display = "block"
+        memeDiv.textContent =""
         getMemes(button.innerText)
         event.preventDefault()
     })
@@ -42,24 +42,43 @@ function getMemes(emotion) {
     })
 }
 const memeDiv = document.getElementById("meme-div")
-const img = document.getElementById("meme-image")
-const label = document.getElementById("likes-label")
-const likesBtn = document.getElementById("likes-btn")
-const dislikeBtn = document.getElementById("dislike-btn")
-const nextBtn = document.getElementById("next-btn")
-const previousBtn = document.getElementById("previous-btn")
 
 function displayMemes(emotion){
 
+    const img = document.createElement("img")
+    img.style.width = "300px"
+    img.style.height = "350px"
+    const label = document.createElement("label")
+
+    const likesBtn = document.createElement("button")
+    likesBtn.textContent = "💓"
+    const dislikeBtn = document.createElement("button")
+    dislikeBtn.textContent = "💔"
+
+    const nextBtn = document.createElement('button')
+    nextBtn.id = "next-button"
+    nextBtn.textContent = "NEXT"
+
+    const previousBtn = document.createElement("button")
+    nextBtn.id = "previous-button"
+    previousBtn.textContent = "Previous"
+
     img.src = emotion[0].imageUrl
+    memeDiv.appendChild(img)
+    memeDiv.appendChild(previousBtn)
 
     label.textContent = `Likes: ${emotion[0].likes}`
+    memeDiv.appendChild(label)
+
+    memeDiv.appendChild(likesBtn)
+    memeDiv.appendChild(dislikeBtn)
+    memeDiv.appendChild(nextBtn)
 
     let i = 0
 
     nextBtn.addEventListener("click", ()=>{
         if(emotion.length - 1 > i){
-            ++i
+            i++
             img.src = emotion[i].imageUrl
             label.textContent = `Likes: ${emotion[i].likes}`
         }
@@ -67,7 +86,7 @@ function displayMemes(emotion){
 
     previousBtn.addEventListener("click", ()=>{
         if(i > 0){
-            --i
+            i--
             img.src = emotion[i].imageUrl
             label.textContent = `Likes: ${emotion[i].likes}`
         }
@@ -105,6 +124,7 @@ function formEventListener(){
     formDiv.addEventListener("submit", (e)=>{
         e.preventDefault()
         addNewMemes(selectChoice.value,imgUrl.value)
+        memeDiv.style.display = "none"
         formDiv.reset()
     })
 }

@@ -167,6 +167,18 @@
       "imageUrl": "https://th.bing.com/th/id/OIP.vIVnZbLNEHMHQJX89fRa7wHaE5?pid=ImgDet&rs=1",
       "likes": 0,
       "id": 28
+    },
+    {
+      "feelingId": "Scared",
+      "imageUrl": "https://th.bing.com/th/id/OIP.vIVnZbLNEHMHQJX89fRa7wHaE5?pid=ImgDet&rs=1",
+      "likes": 0,
+      "id": 29
+    },
+    {
+      "feelingId": "Happy",
+      "imageUrl": "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2018/04/funny-lotr-2.jpg",
+      "likes": 0,
+      "id": 30
     }
   ]
 }
