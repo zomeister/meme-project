@@ -102,12 +102,13 @@ function addNewMemes(choice, imageUrl){
     })
 }
 
+const selectChoice = document.getElementById("select-choice")
+const imgUrl = document.getElementById("img-url")
+
 function formEventListener(){
     formDiv.addEventListener("submit", (e)=>{
-        const selectChoice = document.getElementById("select-choice").value
-        const imgUrl = document.getElementById("img-url").value
         e.preventDefault()
-        addNewMemes(selectChoice,imgUrl)
+        addNewMemes(selectChoice.value,imgUrl.value)
         formDiv.reset()
     })
 }
