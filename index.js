@@ -49,14 +49,6 @@ const previousBtn = document.getElementById("previous-btn")
 
 
 function displayMemes(emotion){
-    // const img = document.createElement("img")
-    // const label = document.createElement("label")
-
-    // const likesBtn = document.createElement("button")
-    // likesBtn.textContent = "💓"
-    // const dislikeBtn = document.createElement("button")
-    // dislikeBtn.textContent = "💔"
-
 
     let arr = []
 
@@ -64,30 +56,10 @@ function displayMemes(emotion){
         arr.push(meme)
     })
 
-//creating next and previous buttons
-
-    // const nextBtn = document.createElement('button')
-    // nextBtn.id = "next-button"
-    nextBtn.textContent = "NEXT"
-
-    // const previousBtn = document.createElement("button")
-    // nextBtn.id = "previous-button"
-    previousBtn.textContent = "Previous"
-
-
- //placeholder image after clicking on button
     img.src = arr[0].imageUrl
-    // memeDiv.appendChild(img)
-    // memeDiv.appendChild(previousBtn)
 
     label.textContent = `Likes: ${arr[0].likes}`
-    // memeDiv.appendChild(label)
-    
-    // memeDiv.appendChild(likesBtn)
-    // memeDiv.appendChild(dislikeBtn)
-    // memeDiv.appendChild(nextBtn)
 
-//next button
     let i = 0
 
     nextBtn.addEventListener("click", ()=>{
@@ -130,7 +102,6 @@ function formEventListener(){
     formDiv.addEventListener("submit", (e)=>{
         const selectChoice = document.getElementById("select-choice").value
         const imgUrl = document.getElementById("img-url").value
-        // memeDiv.textContent =""
         e.preventDefault()
         addNewMemes(selectChoice,imgUrl)
         formDiv.reset()

@@ -4,7 +4,7 @@
       "id": 1,
       "feelingId": "Angry",
       "imageUrl": "https://thumbor.bigedition.com/grumpy-cat-memes/U6vCQJH8J5bumnE95sxsdu4MRsQ=/82x45:909x666/800x0/filters:quality(80)/granite-web-prod/fc/ab/fcab5a05c8d14c2cb3a2d31c1dddad09.jpeg",
-      "likes": 3
+      "likes": 2
     },
     {
       "id": 2,
@@ -58,7 +58,7 @@
       "id": 10,
       "feelingId": "Adventurous",
       "imageUrl": "http://www.adventureseeker.org/wp-content/uploads/2014/06/Funny-Travel-Memes-2.jpg",
-      "likes": 0
+      "likes": -1
     },
     {
       "id": 11,
@@ -149,6 +149,18 @@
       "imageUrl": "https://media.makeameme.org/created/very-very-sad.jpg",
       "likes": 0,
       "id": 25
+    },
+    {
+      "feelingId": "Sleepy",
+      "imageUrl": "https://th.bing.com/th/id/OIP.DrQk4gj9oiXRnUKqzd36wAHaGR?pid=ImgDet&rs=1",
+      "likes": 0,
+      "id": 26
+    },
+    {
+      "feelingId": "Sad",
+      "imageUrl": "https://www.memesmonkey.com/images/memesmonkey/32/3281543e06582572b31cdb0cf29a9265.jpeg",
+      "likes": 0,
+      "id": 27
     }
   ]
 }
