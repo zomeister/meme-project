@@ -4,13 +4,13 @@
       "id": 1,
       "feelingId": "Angry",
       "imageUrl": "https://thumbor.bigedition.com/grumpy-cat-memes/U6vCQJH8J5bumnE95sxsdu4MRsQ=/82x45:909x666/800x0/filters:quality(80)/granite-web-prod/fc/ab/fcab5a05c8d14c2cb3a2d31c1dddad09.jpeg",
-      "likes": 2
+      "likes": 0
     },
     {
       "id": 2,
       "feelingId": "Angry",
       "imageUrl": "https://i.pinimg.com/736x/44/5b/31/445b31000ce37c1f3c8642ce972bc06e--all-about-me-parks-and-recreation.jpg",
-      "likes": 2
+      "likes": 1
     },
     {
       "id": 3,
@@ -58,13 +58,13 @@
       "id": 10,
       "feelingId": "Adventurous",
       "imageUrl": "http://www.adventureseeker.org/wp-content/uploads/2014/06/Funny-Travel-Memes-2.jpg",
-      "likes": -1
+      "likes": 0
     },
     {
       "id": 11,
       "feelingId": "Adventurous",
       "imageUrl": "https://www.quirkybyte.com/wp-content/uploads/2018/03/deb5a2442bdbc7d2b5368c8844eb5f4d.jpg",
-      "likes": 3
+      "likes": 2
     },
     {
       "id": 12,

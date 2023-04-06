@@ -80,7 +80,11 @@ function displayMemes(emotion){
         }
     })
 
-    dislikeBtn.addEventListener('click', () => decreaseMemeLikes(arr[i], label))
+    dislikeBtn.addEventListener('click', () => {
+        if(arr[i].likes > 0){
+            decreaseMemeLikes(arr[i], label)
+        }
+    })
 
 }
 
