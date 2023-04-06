@@ -143,6 +143,12 @@
       "imageUrl": "https://i.imgflip.com/2hqxhv.jpg",
       "likes": 0,
       "id": 24
+    },
+    {
+      "feelingId": "Sad",
+      "imageUrl": "https://media.makeameme.org/created/very-very-sad.jpg",
+      "likes": 0,
+      "id": 25
     }
   ]
 }

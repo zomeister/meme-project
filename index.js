@@ -25,7 +25,7 @@ function createEmotionsList(emotions) {
 
 function emotionOptionEventListener(button) {
     button.addEventListener("click", (event) => {
-        memeDiv.textContent =""
+        memeDiv.style.display = "block";
         getMemes(button.innerText)
         event.preventDefault()
     })
@@ -40,15 +40,22 @@ function getMemes(emotion) {
     })
 }
 const memeDiv = document.getElementById("meme-div")
+const img = document.getElementById("meme-image")
+const label = document.getElementById("likes-label")
+const likesBtn = document.getElementById("likes-btn")
+const dislikeBtn = document.getElementById("dislike-btn")
+const nextBtn = document.getElementById("next-btn")
+const previousBtn = document.getElementById("previous-btn")
+
 
 function displayMemes(emotion){
-    const img = document.createElement("img")
-    const label = document.createElement("label")
+    // const img = document.createElement("img")
+    // const label = document.createElement("label")
 
-    const likesBtn = document.createElement("button")
-    likesBtn.textContent = "💓"
-    const dislikeBtn = document.createElement("button")
-    dislikeBtn.textContent = "💔"
+    // const likesBtn = document.createElement("button")
+    // likesBtn.textContent = "💓"
+    // const dislikeBtn = document.createElement("button")
+    // dislikeBtn.textContent = "💔"
 
 
     let arr = []
@@ -59,43 +66,47 @@ function displayMemes(emotion){
 
 //creating next and previous buttons
 
-    const nextBtn = document.createElement('button')
-    nextBtn.id = "next-button"
+    // const nextBtn = document.createElement('button')
+    // nextBtn.id = "next-button"
     nextBtn.textContent = "NEXT"
 
-    const previousBtn = document.createElement("button")
-    nextBtn.id = "previous-button"
+    // const previousBtn = document.createElement("button")
+    // nextBtn.id = "previous-button"
     previousBtn.textContent = "Previous"
 
 
  //placeholder image after clicking on button
     img.src = arr[0].imageUrl
-    memeDiv.appendChild(img)
-    memeDiv.appendChild(previousBtn)
+    // memeDiv.appendChild(img)
+    // memeDiv.appendChild(previousBtn)
 
     label.textContent = `Likes: ${arr[0].likes}`
-    memeDiv.appendChild(label)
+    // memeDiv.appendChild(label)
     
-    memeDiv.appendChild(likesBtn)
-    memeDiv.appendChild(dislikeBtn)
-    memeDiv.appendChild(nextBtn)
+    // memeDiv.appendChild(likesBtn)
+    // memeDiv.appendChild(dislikeBtn)
+    // memeDiv.appendChild(nextBtn)
 
 //next button
     let i = 0
 
     nextBtn.addEventListener("click", ()=>{
-        i++
-        img.src = arr[i].imageUrl
-        label.textContent = `Likes: ${arr[i].likes}`
+        if(arr.length - 1 > i){
+            i++
+            console.log(i)
+            img.src = arr[i].imageUrl
+            label.textContent = `Likes: ${arr[i].likes}`
+        }
     })
 
     previousBtn.addEventListener("click", ()=>{
-        i--
-        img.src = arr[i].imageUrl
-        label.textContent = `Likes: ${arr[i].likes}`
+        if(i > 0){
+            i--
+            console.log(i)
+            img.src = arr[i].imageUrl
+            label.textContent = `Likes: ${arr[i].likes}`
+        }
     })
-
-    console.log(arr[i])
 
     dislikeBtn.addEventListener('click', () => decreaseMemeLikes(arr[i], label))
 
@@ -113,15 +124,13 @@ function addNewMemes(choice, imageUrl){
             "likes": 0
         })
     })
-    .then(res => res.json())
-    .then(data => getMemes(data))
 }
 
 function formEventListener(){
     formDiv.addEventListener("submit", (e)=>{
         const selectChoice = document.getElementById("select-choice").value
         const imgUrl = document.getElementById("img-url").value
-        memeDiv.textContent =""
+        // memeDiv.textContent =""
         e.preventDefault()
         addNewMemes(selectChoice,imgUrl)
         formDiv.reset()

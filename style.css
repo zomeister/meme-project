@@ -145,3 +145,7 @@ button > img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   } */
+
+#meme-div {
+    display: none;
+}
