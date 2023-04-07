@@ -16,6 +16,17 @@ $ json-server --watch db2.json
 
 Clicking an emotion:
 
-Liking/disliking an emotion:
+![Emotion Menu](images/screenshot1.png)
 
-Adding a new emotion:
+Liking/disliking a meme:
+
+![Like or Dislike Meme](images/screenshot2.png)
+
+Adding a new meme:
+
+![Add a New Meme](images/screenshot3.png)
+
+
+
+
+## Happy Meme-ing!!!
