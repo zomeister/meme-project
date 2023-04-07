@@ -16,7 +16,7 @@ h1 {
     text-shadow: 6px 8px black;
     text-align: center; */
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     text-align: center;
     /* font-family: sans-serif; */
     font-size: 1.5rem;
@@ -55,7 +55,8 @@ h1 {
     padding: 10px;
     display:flex;
     flex-wrap: wrap;
-    margin-left: 200px;
+    margin-left: 100px;
+    min-width: 1000px;
     
 }
 
@@ -110,7 +111,7 @@ label.control-label {
 }
 
 .image-style {
-    width: 50px; 
+    width: 100px; 
     height: 50px; 
     padding: 10px;
 }
@@ -119,12 +120,14 @@ label.control-label {
     margin: 2%;
     border: 10px;
     padding: 5%;
-    min-width: 120px;
+    min-width: 200px;
     max-width: 290px;
     text-align: center;
     font-family: 'Titan One', cursive;
     letter-spacing: 1px;
     font-size: 24px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 1px 2px grey;
     /* color: # */
     
 }
@@ -133,6 +136,7 @@ button > img {
     height: 20px;
     margin: 1%;
     vertical-align: middle;
+
 }
 /* .rainbow-letters {
     margin-top: 0px;
@@ -143,3 +147,21 @@ button > img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   } */
+
+#meme-img {
+    background-color: aliceblue;
+    padding: 10%;
+    border-radius: 20px;
+    box-shadow: 12px 12px 1px 2px grey;
+}
+
+#meme-div > button {
+    background-color: aliceblue;
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: 4px 4px 1px 2px grey;
+    margin-top: 30px;
+    margin-right: 8px;
+    text-align: center;
+    font-family: 'Titan One', cursive;
+}
