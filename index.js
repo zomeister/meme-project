@@ -76,11 +76,25 @@ function displayMemes(emotion){
 
     let i = 0
 
+    previousBtn.style.visibility = "hidden"
+
     nextBtn.addEventListener("click", ()=>{
         if(emotion.length - 1 > i){
             i++
             img.src = emotion[i].imageUrl
             label.textContent = `Likes: ${emotion[i].likes}`
+            if(i !== 0){
+                previousBtn.style.visibility = "visible"
+            }
+            else{
+                previousBtn.style.visibility = "hidden"
+            }
+            if(i !== emotion.length -1 ){
+                nextBtn.style.visibility = "visible"
+            }
+            else{
+                nextBtn.style.visibility = "hidden"
+            }
         }
     })
 
@@ -89,6 +103,18 @@ function displayMemes(emotion){
             i--
             img.src = emotion[i].imageUrl
             label.textContent = `Likes: ${emotion[i].likes}`
+            if(i !== 0){
+                previousBtn.style.visibility = "visible"
+            }
+            else{
+                previousBtn.style.visibility = "hidden"
+            }
+            if(i !== emotion.length -1 ){
+                nextBtn.style.visibility = "visible"
+            }
+            else{
+                nextBtn.style.visibility = "hidden"
+            }
         }
     })
 
@@ -113,8 +139,8 @@ function addNewMemes(choice, imageUrl){
             "likes": 0
         })
     })
-    .then(r=>r.json())
-    .then(data => getMemes(data))
+    // .then(r=>r.json())
+    // .then(data => getMemes(data))
 }
 
 const selectChoice = document.getElementById("select-choice")
@@ -124,7 +150,7 @@ function formEventListener(){
     formDiv.addEventListener("submit", (e)=>{
         e.preventDefault()
         addNewMemes(selectChoice.value,imgUrl.value)
-        memeDiv.style.display = "none"
+        memeDiv.textContent =""
         formDiv.reset()
     })
 }
