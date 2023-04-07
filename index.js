@@ -42,8 +42,10 @@ function getMemes(emotion) {
     })
 }
 const memeDiv = document.getElementById("meme-div")
+memeDiv.style.visibility = "hidden"
 
 function displayMemes(emotion){
+    memeDiv.style.visibility = "visible"
 
     const img = document.createElement("img")
     img.style.width = "300px"
@@ -76,7 +78,7 @@ function displayMemes(emotion){
 
     let i = 0
 
-    previousBtn.style.visibility = "hidden"
+    // previousBtn.style.visibility = "hidden"
 
     nextBtn.addEventListener("click", ()=>{
         if(emotion.length - 1 > i){

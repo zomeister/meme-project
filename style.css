@@ -148,13 +148,18 @@ button > img {
     -webkit-text-fill-color: transparent;
   } */
 
-#meme-img {
+/* #meme-img {
     background-color: aliceblue;
     padding: 10%;
     border-radius: 20px;
     box-shadow: 12px 12px 1px 2px grey;
+} */
+#meme-div {
+    background-color: aliceblue;
+    padding: 5%;
+    /* border-radius: 20px; */
+    box-shadow: 12px 12px 1px 2px grey;
 }
-
 #meme-div > button {
     background-color: aliceblue;
     padding: 2%;
