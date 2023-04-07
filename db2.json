@@ -4,7 +4,7 @@
       "id": 1,
       "feelingId": "Angry",
       "imageUrl": "https://thumbor.bigedition.com/grumpy-cat-memes/U6vCQJH8J5bumnE95sxsdu4MRsQ=/82x45:909x666/800x0/filters:quality(80)/granite-web-prod/fc/ab/fcab5a05c8d14c2cb3a2d31c1dddad09.jpeg",
-      "likes": 1
+      "likes": 7
     },
     {
       "id": 2,
@@ -185,6 +185,12 @@
       "imageUrl": "https://dontgetserious.com/wp-content/uploads/2021/07/disgusted-memes-6.jpeg",
       "likes": 0,
       "id": 31
+    },
+    {
+      "feelingId": "Happy",
+      "imageUrl": "https://www.happierhuman.com/wp-content/uploads/2022/04/happy-memes-sayingimages-friday-yay.png",
+      "likes": 0,
+      "id": 32
     }
   ]
 }

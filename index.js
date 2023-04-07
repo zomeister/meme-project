@@ -21,6 +21,8 @@ function createEmotionsList(emotions) {
         emotionsList.append(button)
         emotionOptionEventListener(button)
     })
+
+    randomMemeListener()
 }
 
 
@@ -129,6 +131,30 @@ function displayMemes(emotion){
     likesBtn.addEventListener('click', () => increaseMemeLikes(emotion[i], label))
 }
 
+function randomMemeListener () {
+    const randomButton = document.getElementById('random-meme-button')
+
+    let i = 0
+
+    randomButton.addEventListener('click', () => {
+
+            memeDiv.textContent = ""
+            getRandomMeme()
+        }
+    )}
+
+let numMemes = 31
+
+function getRandomMeme () {
+
+    const randomIndex = Math.floor(Math.random() * numMemes)
+
+    fetch (memesUrl + `?id=${randomIndex}`)
+    .then (res => res.json())
+    .then (randomMeme => displayMemes(randomMeme))
+}
+
+
 function addNewMemes(choice, imageUrl){
     fetch(memesUrl, {
         method: "POST",
@@ -155,6 +181,8 @@ function formEventListener(){
         memeDiv.textContent =""
         formDiv.reset()
     })
+
+    numMemes++
 }
 
 function increaseMemeLikes(meme, label) {
