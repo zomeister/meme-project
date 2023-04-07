@@ -20,6 +20,10 @@ Clicking an emotion:
 
 ![Emotion Menu](images/navlist.png)
 
+Get a random meme:
+
+![Random Meme Button](images/randommeme.png)
+
 Liking/disliking a meme:
 
 ![Like or Dislike Meme](images/meme.png)
